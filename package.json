@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "Express": "^3.0.1",
+    "babel": "^6.23.0",
+    "express": "^4.15.3",
+    "passport": "^0.3.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "gramquiz",
+  "version": "1.0.0",
+  "description": "Enneagram Quiz",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
