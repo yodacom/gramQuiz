@@ -5,7 +5,8 @@
     "passport": "^0.3.2",
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha",
   },
   "name": "gramquiz",
   "version": "1.0.0",
