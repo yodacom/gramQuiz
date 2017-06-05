@@ -2,11 +2,11 @@
   "dependencies": {
     "express": "^4.15.3",
     "mocha": "^3.4.2",
-    "passport": "^0.3.2",
+    "passport": "^0.3.2"
   },
   "scripts": {
     "start": "node server.js",
-    "test": "mocha",
+    "test": "mocha"
   },
   "name": "gramquiz",
   "version": "1.0.0",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "chai": "^4.0.1",
-    "chai-http": "^3.0.0",
+    "chai-http": "^3.0.0"
   },
   "author": "",
   "license": "ISC"
