@@ -16,6 +16,7 @@ describe('gramQuiz', () => {
     .get('/index.html')
     .end((err, res) => {
       res.should.have.status(200);
+      res.should.be.html;
       done();
     });
   });

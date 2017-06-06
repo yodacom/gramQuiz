@@ -1,25 +1,42 @@
 {
+  "name": "gramquiz",
+  "version": "1.0.0",
+  "description": "This quiz evaluates personality type by letting user choose words and based on words chosen and attributes attached to each word selected evaluate to a personality typology grouped into 9 types and subtypes based on the Enneagram Typology.",
+  "main": "./js/app.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "node_modules/.bin/webpack-dev-server",
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yodacom/gramQuiz.git"
+  },
+  "author": "Jeremy Black",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yodacom/gramQuiz/issues"
+  },
+  "homepage": "https://github.com/yodacom/gramQuiz#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1",
     "mocha": "^3.4.2",
     "mongoose": "^4.10.4",
     "passport": "^0.3.2"
   },
-  "scripts": {
-    "start": "node server.js",
-    "test": "mocha --timeout 10000"
-  },
-  "name": "gramquiz",
-  "version": "1.0.0",
-  "description": "Enneagram Quiz",
-  "main": "server.js",
   "devDependencies": {
     "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
     "chai": "^4.0.1",
     "chai-http": "^3.0.0",
-    "should": "^11.2.1"
-  },
-  "author": "Jeremy Black",
-  "license": "ISC"
+    "should": "^11.2.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
 }
