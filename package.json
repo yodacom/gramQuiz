@@ -2,14 +2,15 @@
   "name": "gramquiz",
   "private": true,
   "engines": {
-    "node": ">= 7.6.0",
+    "node": ">= 7.6.0"
+  },
   "version": "1.0.0",
   "description": "This quiz evaluates personality type by letting user choose words and based on words chosen and attributes attached to each word selected evaluate to a personality typology grouped into 9 types and subtypes based on the Enneagram Typology.",
   "main": "./js/app.js",
   "scripts": {
     "prod": "node ./start.js",
-    "watch": "nodemon ./start.js --ignore public/",
-    "start": "concurrently 'npm run watch' 'npm run assets' --names  --prefix name/'",
+    "watch": "nodemon server --ignore public/",
+    "start": "concurrently 'npm run watch' 'npm run assets' --names  --prefix name/",
     "assets": "webpack -w --display-max-modules 0",
     "build": "webpack",
     "test": "mocha --timeout 10000",
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/yodacom/gramQuiz#readme",
   "dependencies": {
+    "autoprefixer": "^7.1.1",
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "concurrently": "^3.4.0",
@@ -35,11 +37,13 @@
     "express": "^4.15.3",
     "express-session": "^1.15.3",
     "express-validator": "^3.2.0",
+    "extract-text-webpack-plugin": "^2.1.0",
     "jquery": "^3.1.1",
     "jquery-ui": "^1.12.1",
     "mocha": "^3.4.2",
     "mongoose": "^4.10.5",
     "mongoose-promises": "^0.0.6",
+    "nodemon": "^1.11.0",
     "passport": "^0.3.2"
   },
   "devDependencies": {
@@ -55,4 +59,3 @@
     "webpack-dev-server": "^2.4.5"
   }
 }
-
