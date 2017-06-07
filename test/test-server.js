@@ -20,6 +20,16 @@ describe('gramQuiz', () => {
       done();
     });
   });
+
+    it('return a list of persons', (done) => {
+        chai.request(app)
+            .get('/person')
+            .end((err, res) => {
+                res.should.have.status(200);
+                res.should.be.json;
+                done();
+            });
+    });
   // it('should list results of quiz on GET', function(done) {
   //     chai.request(app)
   //     .get('/profile')
